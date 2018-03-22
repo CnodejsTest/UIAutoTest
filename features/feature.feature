@@ -21,6 +21,6 @@ GitHub授权登录功能：
     当点击GitHub登录按钮
     那么登录状态"<状态>"，提示信息"<信息>"
     例子: 
-      | 用户名          | 密码          | 状态 | 信息                              |
-      |              | xxxxxxxx    | 失败 | Incorrect username or password. |
-      | yourusername | yoourpasswd | 成功 | yourusername                    |
+      | 用户名          | 密码         | 状态 | 信息                              |
+      |              | xxxxxxxx   | 失败 | Incorrect username or password. |
+      | yourusername | yourpasswd | 成功 | yourusername                    |

@@ -5,8 +5,9 @@ const { driver } = require('./web_driver')
 //set default step timeout
 setDefaultTimeout(60 * 1000);
 
-Before(function () {
+Before(async function () {
     //Before Scenario Hook
+    await driver.manage().window().maximize();
 })
 
 After(async function () {
