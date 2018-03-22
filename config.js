@@ -1,0 +1,1 @@
+exports.rootUrl = "http://egg.cnodejs.org"
