@@ -1,4 +1,5 @@
 # language: zh-CN
+@user_login
 功能: 用户登录功能
 用户登录分为GitHub授权登录与用户名密码登录两种方式
 测试点主要分为以下情况：
@@ -17,8 +18,8 @@ GitHub授权登录功能：
     当点击使用GitHub登录按钮跳转到GitHub授权登录页面
     并且GitHub用户名或邮件中输入"<用户名>"
     同时密码栏中输入"<密码>"
-    那么点击GitHub登录按钮
-    * 登录状态"<状态>"，提示信息"<信息>"
+    当点击GitHub登录按钮
+    那么登录状态"<状态>"，提示信息"<信息>"
     例子: 
       | 用户名          | 密码          | 状态 | 信息                              |
       |              | xxxxxxxx    | 失败 | Incorrect username or password. |
