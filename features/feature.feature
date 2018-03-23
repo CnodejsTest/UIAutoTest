@@ -20,7 +20,21 @@ GitHub授权登录功能：
     同时密码栏中输入"<密码>"
     当点击GitHub登录按钮
     那么登录状态"<状态>"，提示信息"<信息>"
+    那么退出登陆
     例子: 
-      | 用户名          | 密码         | 状态 | 信息                              |
-      |              | xxxxxxxx   | 失败 | Incorrect username or password. |
-      | yourusername | yourpasswd | 成功 | yourusername                    |
+      | 用户名      | 密码       | 状态 | 信息                              |
+      |          | xxxxxxxx | 失败 | Incorrect username or password. |
+      | username | passwd   | 成功 | yourusername                    |
+
+  场景大纲: 使用账号密码登陆
+    假如浏览到网站首页(一)
+    当点击登录按钮应该跳转到登录页面(二)
+    并且账号栏输入"<账号>"
+    同时密码栏输入"<密码>"
+    当点击登陆按钮
+    那么登陆状态“<状态>”，提示信息"<信息>"
+    例子: 
+      | 账号       | 密码     | 状态 | 信息       |
+      | 1        | 1      | 失败 | 用户名或密码错误 |
+      | 1        |        | 失败 | 信息不完整。   |
+      | username | passwd | 成功 | 登陆成功！    |

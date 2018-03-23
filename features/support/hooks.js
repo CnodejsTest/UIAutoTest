@@ -1,3 +1,4 @@
+var { Given, When, Then } = require('cucumber')
 var { After, Before, AfterAll, setDefaultTimeout } = require('cucumber');
 const { driver } = require('./web_driver')
 
@@ -24,4 +25,3 @@ AfterAll(function () {
     //perform some shared teardown
     return driver.quit();
 })
-
