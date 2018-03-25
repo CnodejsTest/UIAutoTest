@@ -1,1 +1,1 @@
-exports.rootUrl = "http://egg.cnodejs.org"
+exports.rootUrl = "http://118.31.19.120:7002"

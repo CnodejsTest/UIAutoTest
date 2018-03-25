@@ -52,6 +52,8 @@ Then(/^登录状态"([^"]*)"，提示信息"([^"]*)"$/, async function (status, 
         let loginname_text = await driver.findElement({css:'#sidebar > div:nth-child(1) > div.inner > div > div > span.user_name'}).getText();
         return assert.deepEqual(loginname_text,infomessage)
     }
+});
 
-    
+Given(/^用户登录成功$/, async function () {
+
 });
