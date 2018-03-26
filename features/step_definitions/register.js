@@ -33,7 +33,7 @@ Then(/^点击注册按钮$/, async function () {
     await driver.findElement({ className: 'span-primary' }).click();
 });
 
-Then(/^应该注册"([^"]*)"，校验点为"([^"]*)"$/, async function (status, exceptVal) {
+Then(/^应该注册"([^"]*)"，提示信息为"([^"]*)"$/, async function (status, exceptVal) {
 
     let msgText;
     switch (status) {

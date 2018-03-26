@@ -24,3 +24,15 @@ GitHub授权登录功能：
       | 用户名          | 密码         | 状态 | 信息                              |
       |              | xxxxxxxx   | 失败 | Incorrect username or password. |
       | yourusername | yourpasswd | 成功 | yourusername                    |
+
+  场景大纲: 用户名密码登录
+    假如导航到用户登录页面
+    当用户名输入"<username>"
+    当密码输入"<password>"
+    当点击登录按钮
+    那么应该登录"<status>"，校验点为"<checkpoint>"
+    例子: 
+      | param1    | param2 | param3 | checkpoint |
+      | testuser3 | 123456 | 成功     | testuser3  |
+      |           | 123456 | 失败     | 信息不完整。     |
+      | 123456    | 123456 | 失败     | 用户名或密码错误   |

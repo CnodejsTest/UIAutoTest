@@ -35,4 +35,5 @@ cnpm install
 使用其它编辑器的同学 在命令行 直接运行 `npm run start` 运行所有脚本  
 运行单个场景(每个feature文件里都有介绍) 命令行运行 `npm run user_login` 
 
-
+如果要运行单个场景可以参考cucumber官网说明，只不过这种方式运行完不能产生测试报告
+https://github.com/cucumber/cucumber-js/blob/master/docs/cli.md

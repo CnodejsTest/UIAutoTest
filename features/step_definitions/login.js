@@ -75,3 +75,20 @@ Then(/^登录系统并显示用户名"([^"]*)"$/, async function (username) {
     let text = await driver.findElement({ css: '.user_name > a.dark' }).getText();
     return assert.equal(text, username)
 });
+
+When(/^点击登录按钮$/, async function () {
+
+    await driver.findElement({ css: 'input[type=submit]' }).click();
+});
+
+Then(/^应该登录"([^"]*)"，校验点为"([^"]*)"$/, async function (status, exceptval) {
+    let text;
+    switch (status) {
+        case "成功":
+            text = await driver.findElement({ css: '.user_name > a.dark' }).getText();
+            return assert.equal(text, exceptval)
+        case "失败":
+            text = await driver.findElement({css:'div.alert.alert-error > strong'}).getText();
+            return assert.equal(text,exceptval);
+    }
+});
