@@ -32,7 +32,7 @@ GitHub授权登录功能：
     当点击登录按钮
     那么应该登录"<status>"，校验点为"<checkpoint>"
     例子: 
-      | param1    | param2 | param3 | checkpoint |
-      | testuser3 | 123456 | 成功     | testuser3  |
-      |           | 123456 | 失败     | 信息不完整。     |
-      | 123456    | 123456 | 失败     | 用户名或密码错误   |
+      | username  | password | status | checkpoint |
+      | testuser3 | 123456   | 成功     | testuser3  |
+      |           | 123456   | 失败     | 信息不完整。     |
+      | 123456    | 123456   | 失败     | 用户名或密码错误   |

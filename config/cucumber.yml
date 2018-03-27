@@ -1,0 +1,1 @@
+delete: '--tags @delete --format html --overwrite false --captureVideo false'
