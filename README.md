@@ -10,7 +10,7 @@ cnodejs社区的UI自动化代码
 
 代码编辑器:  
 Windows用户推荐使用 CukeTest
- （http://cuketest.com）  
+ (http://cuketest.com)  
 
 Mac,Linux 用户推荐使用vscode
 或者使用任意你爱好的编辑器
