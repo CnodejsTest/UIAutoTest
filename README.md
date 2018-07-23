@@ -9,10 +9,10 @@ cnodejs社区的UI自动化代码
 为了正常运行自动化脚本，请最新版的chrome浏览器。
 
 代码编辑器:  
-Windows用户推荐使用 CukeTest
+Windows,Mac用户推荐使用 CukeTest
  （http://cuketest.com）  
 
-Mac,Linux 用户推荐使用vscode
+Linux 用户推荐使用vscode
 或者使用任意你爱好的编辑器
 
 **1.下载代码**
