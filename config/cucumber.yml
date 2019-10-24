@@ -1,1 +1,4 @@
-delete: '--tags @delete --format html --overwrite false --captureVideo false'
+delete: '--format html --tags @delete --overwrite false'
+RPA: >-
+  --format html --tags @rpa alltask\reply.feature alltask\unreadmsg.feature
+  alltask\delete_topic.feature alltask\collect_topic.feature

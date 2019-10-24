@@ -34,10 +34,9 @@ Then(/^输入标题"([^"]*)"$/, async function (title) {
 });
 
 Then(/^输入正文"([^"]*)"$/, async function (content) {
-
-    await driver.findElement({ css: '.CodeMirror-scroll' }).click();
-    let input_area = await driver.findElement({ css: '.CodeMirror-cursor.CodeMirror-secondarycursor' })
-    await driver.actions().mouseMove(input_area).sendKeys(content).perform();
+    const inputAear = await driver.findElement({ css: '.CodeMirror-scroll'});
+    await inputAear.click();
+    await driver.actions().move(inputAear).sendKeys(content).perform();
 });
 
 Then(/^点击提交,"([^"]*)"校验点"([^"]*)"$/, async function (status, checkMessage) {

@@ -1,4 +1,5 @@
 # language: zh-CN
+@rpa
 功能: 未读消息模块
 未读消息
 
@@ -22,9 +23,8 @@
     那么进入回复主题页，输入内容"<回复内容>"
     那么点击提交,添加校验点，"<回复数>","<楼层>","<回复内容>"，"<回复者>"
     例子: 
-      | 标题            | 回复内容           | 回复数 | 楼层 | 回复者       |
-      | helloworld123 | qweqwrerwrwr   | 1   | 1  | testuser4 |
-      | helloworld123 | qweqeqgfgbhgdn | 2   | 2  | testuser5 |
+      | 标题            | 回复内容         | 回复数 | 楼层 | 回复者       |
+      | helloworld123 | qweqwrerwrwr | 1   | 1  | testuser4 |
 
   场景: 未读消息功能
     假如导航到用户登录页面

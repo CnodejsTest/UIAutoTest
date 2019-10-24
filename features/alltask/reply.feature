@@ -1,8 +1,8 @@
 # language: zh-CN
+@rpa
 功能: 话题相关操作
     主要操作为回帖
     负责人： 徐枫
-    日期：2018-3-25
 
   场景: 用户登录并发布一个话题
     假如导航到用户登录页面
@@ -24,6 +24,5 @@
     那么进入回复主题页，输入内容"<回复内容>"
     那么点击提交,添加校验点，"<回复数>","<楼层>","<回复内容>"，"<回复者>"
     例子: 
-      | 标题            | 回复内容           | 回复数 | 楼层 | 回复者       |
-      | helloworld123 | qweqwrerwrwr   | 1   | 1  | testuser4 |
-      | helloworld123 | qweqeqgfgbhgdn | 2   | 2  | testuser5 |
+      | 标题            | 回复内容         | 回复数 | 楼层 | 回复者       |
+      | helloworld123 | qweqwrerwrwr | 1   | 1  | testuser4 |

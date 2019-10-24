@@ -1,4 +1,5 @@
 # language: zh-CN
+@rpa
 功能: 用户发帖
 发帖不同场景
 
