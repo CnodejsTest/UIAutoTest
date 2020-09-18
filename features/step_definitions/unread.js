@@ -1,7 +1,7 @@
 const { Given, When, Then } = require('cucumber');
 const assert = require('assert');
 const { driver } = require('../support/web_driver');
-
+const {until} = require("selenium-webdriver");
 
 Given(/^点击右上角的未读消息标签，跳转到未读消息页面$/, async function () {
 
@@ -9,7 +9,7 @@ Given(/^点击右上角的未读消息标签，跳转到未读消息页面$/, as
 });
 
 When(/^未读界面的新消息应该和标签上数字一致$/, async function () {
-
+    await until.elementLocated({css: '.messages_count' }, 5000);
     let count=await driver.findElement({css:'.messages_count'}).getText();
     let count1=await driver.findElements({css:'.cell.message'});
     // console.log(count1.length);

@@ -1,1 +1,1 @@
-exports.rootUrl = "http://39.107.96.138:3000"
+exports.rootUrl = "http://49.233.108.117:3000"

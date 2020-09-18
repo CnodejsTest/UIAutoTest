@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/selenium-webdriver": "^3.0.8",
-    "chromedriver": "^77.0.0",
+    "chromedriver": "^85.0.1",
     "cucumber": "^4.0.0",
     "selenium-webdriver": "^4.0.0-alpha.5"
   },

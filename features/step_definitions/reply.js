@@ -1,6 +1,7 @@
 let { driver } = require("../support/web_driver");
 let { Given, Then, When } = require("cucumber")
 let assert = require('assert');
+let {until} = require('selenium-webdriver')
 
 When('点击主题位置{string}', async function (linkName) {
 
@@ -12,11 +13,12 @@ When('点击主题位置{string}', async function (linkName) {
 });
 
 Then('进入回复主题页，输入内容{string}', async function (Doc) {
-
+    await until.elementLocated({ css: '.editor-toolbar' }, 5000)
     // await driver.executeScript(function () {
     //     document.querySelector("#reply_form .CodeMirror-scroll").scrollIntoView();
     // })
     const inputAear = await driver.findElement({ css: '.CodeMirror-scroll' });
+
     await inputAear.click();
     await driver.actions().move(inputAear).sendKeys(Doc).perform();
 
